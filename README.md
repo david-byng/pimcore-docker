@@ -24,6 +24,8 @@ pimcore:
 mysql:
   image: mysql:latest
   environment:
+    # edit website/var/config/system.xml to use the user, pass and db specified here
+    # as well as the linked hostname "mysql"
     - "MYSQL_ROOT_PASSWORD=root_password"
     - "MYSQL_PASSWORD=user_password"
     - "MYSQL_USER=user"
